@@ -71,7 +71,15 @@
 }
 
 @media(min-width: 1400px) { 
+	.carousel{
+		height: 75vh;
+	}
 	.carousel-caption h1, .carousel-caption h2 { 
 		font-size: 4rem; 
+		white-space: nowrap;
 	}
+	.carousel-caption {
+		bottom: 35%;
+	}
+	
 }
