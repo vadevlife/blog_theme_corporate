@@ -1,20 +1,38 @@
 /* slide persona */
 
-.carousel img { 
+/* .carousel img { 
 	min-width: 100%;
-}
-.slide img {
+} */
+/* .slide img {
     height: 540px;
-}
+} */
 .carousel-control-prev-icon {
-	background-image: url('../icons/arrow_left.svg');
+	background-image: url('../icons/preview.png');
 }
 
 .carousel-control-next-icon {
-	background-image: url('../icons/arrow_right.svg');
+	background-image: url('../icons/next.png');
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  
+    width: 30px;
+    height: 30px; 
+}
+.carousel-caption .icon{
+    width: 80px;
+
+}
+
+
+@media(max-width: 768px) {
+	ol.carousel-indicators {
+		display: none;
+	}
 }
 
 @media(min-width: 768px) {
+	
     .carousel-caption{
 		bottom: 20%; 
     }
@@ -22,7 +40,7 @@
 		transform: rotate(90deg);
 		bottom: 60%;
         left: inherit;
-        right: -8%;
+        right: -0%;
 	}
 	.carousel-indicators li {
 		display: flex;
@@ -49,11 +67,11 @@
 	li.active {
 		background: white;
 	}
+	 
 }
 
-@media(min-width: 1300px) {
-    .carousel-caption{
-		bottom: 40%; 
-    }
-
+@media(min-width: 1400px) { 
+	.carousel-caption h1, .carousel-caption h2 { 
+		font-size: 4rem; 
+	}
 }
